@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Restaurant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Google Material Icon Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+  <link 
+  rel="stylesheet" href= 
+"https://fonts.googleapis.com/icon?family=Material+Icons"> 
+
+  <script src="code.jquery.com_jquery-3.7.1.js"></script>
+
+</head>
+<body >
+
+<!--NAVIGATION BAR STARTS-->
+  <nav class="navbar navbar-expand-md fixed-top ">
+    <div class="container">
+    <a class="navbar-brand" href=""><img class="logo" src="logorestro.png" alt="RestrO">RestrO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="navbarOffcanvasLgLabel">    <a class="navbar-brand"><img class="logo" src="logorestro.png" alt="RestrO">RestrO</a>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Order Online</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Contact</a>
+          </li>  
+          <li class="nav-item">
+            <a href="try.html"><button class="custom-btn">Login/Sign In</button></a>          
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+  </nav>
+<!--NAVIGATION ENDS-->
+
+<!--SLIDESHOW STARTS-->
+<!--SLIDESHOW STARTS-->
+<div id="mycarousel" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <!-- Text on one side (for medium screens and larger) -->
+          <div class="col-md-6 d-md-flex align-items-center">
+            <div>
+              <h1>Taste the Tradition of Italian perfection.</h1>
+              <ul class="custom-list">
+                <li>Panpie, Burgers, And Best</li>
+                <li>Excellent Of Quality Pizza</li>
+                <li>Chicken Sandwich</li>
+              </ul>
+              <button  id="order1" onclick="scrollToDiv('menu')" class="custom-btn" >Order Now</button>
+            </div>
+          </div>
+          <!-- Image on the other side -->
+          <div class="col-md-6">
+            <img src="about us burger.png" alt="Image" class="carousel-img img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <!-- Text on one side (for medium screens and larger) -->
+          <div class="col-md-6 d-md-flex align-items-center">
+            <div>
+              <h1>Experience a Garden of Flavors in Every Bite</h1>
+              <ul class="custom-list">
+                <li>Panpie, Burgers, And Best</li>
+                <li>Excellent Of Quality Pizza</li>
+                <li>Chicken Sandwich</li>
+              </ul>
+              <button  id="order2" onclick="scrollToDiv('menu')" class="custom-btn" >Order Now</button>
+            </div>
+          </div>
+          <!-- Image on the other side -->
+          <div class="col-md-6">
+            <img src="pizza.png" alt="Image" class="carousel-img img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-md-flex align-items-center">
+            <div>
+              <h1>Savor the Flavor of Baked Pepperoni</h1>
+              <ul class="custom-list">
+                <li>Panpie, Burgers, And Best</li>
+                <li>Excellent Of Quality Pizza</li>
+                <li>Chicken Sandwich</li>
+              </ul>
+              <button   id="order3" onclick="scrollToDiv('menu')" class="custom-btn ">Order Now</button>
+            </div>
+          </div>
+          <!-- Image on the other side -->
+          <div class="col-md-6">
+            <img src="french-fries.png" alt="Image" class="carousel-img img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--SLIDESHOW ENDS-->
+
+<!--SLIDESHOW ENDS-->
+
+<!--ABOUT US STARTS-->
+<div class="about_us" id="about">
+<div class="container mt-5">
+  <div class="row align-items-center">
+    <!-- Image on one side -->
+    <div class="col-md-6">
+      <img src="aboutusimage.png" alt="About Us Image" class="img-fluid">
+    </div>
+    <!-- Text on the other side -->
+    <div class="about_text col-md-6">
+      <h5 >About Us</h5>
+      <h2 style="font-weight: bold;">Why We Are The Best</h2>
+      <p>
+        At RestrO dining is more than just a meal; it's an experience.
+ RestrO is passionate about good food, great atmosphere, and creating memorable moments. 
+ Our journey began with a simple dream: to bring people together through the joy of delicious cuisine.
+      </p>
+      <p>
+        It all started with a family recipe, passed down through generations. With a vision to share our love for food, we set out on a culinary adventure. Our chefs meticulously craft each dish, using the finest ingredients, creativity, and a dash of love.
+
+
+      </p>
+      <ul class="custom-list" style="font-size: 16px;font-weight:600;">
+        <li>Delicious & Healthy Food</li>
+        <li>Specific Family And Kids Zone</li>
+        <li>Music & Other Facilities</li>
+        <li>Fastest Food Home Delivery</li>
+      </ul>
+      <button  id="order1" onclick="scrollToDiv('menu')" class="custom-btn">Order Now</button> 
+
+    </div>
+  </div>
+</div>
+</div>
+<!--ABOUT US ENDS-->
+
+
+<!--MENU STARTS-->
+<div class="container mt-5 menu" id="menu">
+  <h5 class="text-center">Special Menu</h5>
+  <h1 class="text-center">Our Specials Menu</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row menu-card">
+        <div class="col-md-2">
+          <img src="1.png" alt="Greek Salad" class="img-fluid">
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col item-name">Margherita Pizza</div>
+            <div class="col-md-2 price">$11.2</div>
+          </div>
+          <div class="row">
+            <div class="col">A classic Margherita pizza topped with ripe tomatoes and fresh mozzarella.</div>
+          </div>
+        </div>
+      </div>
+      <div class="row menu-card">
+        <div class="col-md-2">
+          <img src="2.jpg" alt="Greek Salad" class="img-fluid">
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col item-name">Cheese Platter</div>
+            <div class="col-md-2 price" >$15.99</div>
+          </div>
+          <div class="row">
+            <div class="col">A delightful cheese platter featuring a variety of fine cheeses.</div>
+          </div>
+        </div>
+      </div>
+      <div class="row menu-card">
+        <div class="col-md-2">
+          <img src="3.png" alt="Greek Salad" class="img-fluid">
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col item-name">Spaghetti Bolognese</div>
+            <div class="col-md-2 price">$11.99</div>
+          </div>
+          <div class="row">
+            <div class="col">A mouthwatering plate of spaghetti served with rich Bolognese sauce.</div>
+          </div>
+        </div>
+      </div>
+      <div class="row menu-card">
+        <div class="col-md-2">
+          <img src="4.png" alt="Greek Salad" class="img-fluid">
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col item-name">Veggie Wrap</div>
+            <div class="col-md-2 price">$6.99</div>
+          </div>
+          <div class="row">
+            <div class="col">A wholesome veggie wrap filled with fresh vegetables and your choice of dressing.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat similar menu-card divs for other items -->
+    </div>
+    <div class="col-md-6">
+      <div class="row menu-card">
+        <div class="col-md-2">
+          <img src="5.png" alt="Greek Salad" class="img-fluid">
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col item-name">Sushi Platter</div>
+            <div class="col-md-2 price">$17.99</div>
+          </div>
+          <div class="row">
+            <div class="col">An assortment of delicious sushi rolls, perfect for sushi enthusiasts.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row menu-card">
+        <div class="col-md-2">
+          <img src="6.png" alt="Greek Salad" class="img-fluid">
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col item-name">Greek Salad</div>
+            <div class="col-md-2 price">$7.99</div>
+          </div>
+          <div class="row">
+            <div class="col">A classic Greek salad with fresh cucumbers, tomatoes, olives, and feta cheese.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row menu-card">
+        <div class="col-md-2">
+          <img src="7.png" alt="Greek Salad" class="img-fluid">
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col item-name">Chicken Alfredo</div>
+            <div class="col-md-2 price">$13.99</div>
+          </div>
+          <div class="row">
+            <div class="col">Tender chicken in a creamy Alfredo sauce, seasoned with garlic and Parmesan cheese.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row menu-card">
+        <div class="col-md-2">
+          <img src="8.png" alt="Greek Salad" class="img-fluid">
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col item-name">Chocolate Brownie</div>
+            <div class="col-md-2 price">$4.99</div>
+          </div>
+          <div class="row">
+            <div class="col">Indulge in a decadent chocolate brownie, a sweet treat for your taste buds.
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</div>
+</div>
+<div class="row" style="padding-top: 50px;">
+  <div class="col text-center">
+    
+  <a href="#" class="custom-btn">Order Now</a>
+  </div>
+</div>
+</div>
+<!--MENU ENDS-->
+
+
+
+
+<!--REVIEWS STARTS-->
+<div class="testimonial-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="section-header text-center">
+						<h1 style="font-weight: 700;">Our Customers <span style="color: #CC3333;">Reviews</span></h1>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="carousel slide" data-bs-ride="true" id="carouselExampleIndicators" data-interval="1000">
+						<div class="carousel-indicators">
+							<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								
+								<div class="content text-center">
+									<p>A delightful dining experience! The menu offers a great variety, and the flavors are fantastic. The staff is attentive, and the prices are reasonable. I'd definitely recommend their seafood dishes!</p>
+									<div class="person"><img alt="" src="c1.png"></div>
+									<h5>David Jones</h5>
+								</div>
+							</div>
+							<div class="carousel-item">
+							
+								<div class="content text-center">
+									<p>A solid choice for a family dinner. The portions are generous, and the prices are reasonable. The atmosphere is welcoming. I love their pasta dishes, and my kids adore the pizza.</p>
+									<div class="person"><img alt="" src="c2.jpg"></div>
+									<h5>Martin Thomas</h5>
+									
+								</div>
+							</div>
+							<div class="carousel-item">
+
+								<div class="content text-center">
+									<p>This restaurant is my happy place. It's perfect for a cozy dinner with friends. The staff is friendly, and the cocktails are amazing. You can't go wrong with their chef's specials</p>
+									<div class="person"><img alt="" src="c3.jpg"></div>
+									<h5>Luke Jobs</h5>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--REVIEWS ENDS-->
+
+
+<!--CONTACT US STARTS-->
+<div class="contact-area" id="contact-us">
+  <div class="contact container mt-5">
+    <h5 class="text-center">We're here for You </h5>
+    <h2 class="text-center">Contact Us</h2>
+    
+
+    <form action="process_form.php" method="post" onsubmit="return validateContactForm()">
+        <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="form-control" required>
+            <span id="phone-error" style="color: red; display: none;">Please enter a valid phone number.</span>
+
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="custom-btn">Submit</button>
+    </form>
+    <div id="confirmation-message" style="display: none;">Message has been sent.</div>
+  </div>
+</div>
+
+<!--CONTACT US ENDS-->
+
+
+
+<!--FOOTER STARTS-->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="footer-logo">
+          <a class="navbar-brand" href="" ><img class="logo" src="bugerfot.png" alt="RestrO">RestrO</a>
+          <ul class="list-group">
+            <li class="list-group-item d-flex align-items-center">
+              <div class="icon-background">
+                <span class="material-icons">location_on</span>
+              </div>
+              <span class="ms-3">4920 Trails End Road Ft 
+                <br> United States, FL 33311</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <div class="icon-background">
+                <span class="material-icons">mail</span>
+              </div>
+              <span class="ms-3">nfo@example.com
+                <br>
+                test@example.com</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <div class="icon-background">
+                <span class="material-icons filled">call</span>
+              </div>
+              <span class="ms-3">+123 456 679 123
+                <br>
+                +123 456 789</span>
+            </li>
+          </ul>
+          
+
+
+
+
+          
+        </div>
+        
+      </div>
+
+      
+      <div class="col-md-4">
+          <div class="column-heading">Quick Links</div> <!-- Added column heading -->
+
+        <div class="quick-links">
+          <ul>
+            <li style="margin-top: 37px;"><a href="#">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#menu">Order Online</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact-us">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="column-heading">Opening Hours</div> <!-- Added column heading -->
+
+        <div class="opening-hours">
+          <table style="margin-top: 34px;">
+            <tr>
+              <td>Monday - Friday</td>
+              <td>9:00 AM - 10:00 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday - Sunday</td>
+              <td>10:00 AM - 11:00 PM</td>
+            </tr>
+          </table>
+
+                    <!-- Social Buttons with Icons -->
+<!-- Social Buttons with Bootstrap Glyphicons (Unicode) -->
+<div class="social-buttons">
+  <a href="https://www.facebook.com/" class="btn btn-primary">
+    <i class="bi bi-facebook"></i>
+  </a>
+  <a href="https://www.twitter.com" class="btn btn-primary">
+    <i class="bi bi-twitter"></i>  </a>
+  <a href="https://www.instagram.com" class="btn btn-primary">
+    <i class="bi bi-instagram"></i>  </a>
+  <a href="https://www.skype.com" class="btn btn-primary">
+    <i class="bi bi-skype"></i>  </a>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="row separator"></div> <!-- Separator line -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="copyright">
+          &copy; 2023 RestrO. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--FOOTER ENDS-->
+
+
+</body>
+<script src="script.js">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</html>
+
+
