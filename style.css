@@ -30,7 +30,7 @@ a.nav-link:hover {
     color: #CC3333;
   }
 
-.about_text h5 , .menu h5 , .contact h5, .login h5{
+.about_text h5 ,  .menu h5 , .contact h5, .login h5{
     font-family: cursive;
      font-weight: 700;
      color: #CC3333;
@@ -50,7 +50,7 @@ a.nav-link:hover {
 .navbar{
     transition: 0.5s;
     font-size: 15px;
-    height: 70px;
+    height: 70px;z-index: 2;
 }
 .nav-item{
     padding-right: 20px;
@@ -74,7 +74,6 @@ a.nav-link:hover {
 }
 
 
-/* Common style for all carousel items */
 
 #mycarousel h1{
     font-size: 55px;
@@ -85,9 +84,9 @@ a.nav-link:hover {
 
 @media (max-width: 768px) {
     #mycarousel h1 {
-        font-size: 30px;
+        font-size: 30px; 
         padding-bottom: 15px;
-
+         
     }
 }
 
@@ -98,7 +97,7 @@ a.nav-link:hover {
     }
 }
 .carousel-item {
-    transition: transform 0.6s ease-in-out; 
+    transition: transform 0.6s ease-in-out;
     transform: translateX(0);
   }
   
@@ -129,11 +128,10 @@ a.nav-link:hover {
       padding: 0; 
     }
     .carousel {
-      margin-top: 80px;
+      margin-top: 80px; 
     }
     
   }
-/* Media query for screens smaller than the "small" (sm) breakpoint */
 @media (max-width: 575px) {
     .navbar {
         padding: 0; 
@@ -175,31 +173,6 @@ a.nav-link:hover {
     padding-left: 50px;
 }
 
-.menu{
-padding: 80px 0 80px 0;
-}
-.menu h1, .login h1{
-    font-weight: 700;
-    padding-bottom: 30px;
-}
-.menu-card{
-    padding-top: 30px;
-}
-.menu-card img{
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-}
-
-.item-name{
-    font-size: 16px;
-    font-weight: 700;
-}
-.price{
-    color:#CC3333;
-    font-size: 16px;
-    font-weight: 700;
-}
 
 
 
@@ -277,7 +250,7 @@ padding: 80px 0 80px 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(240, 248, 255, 0.7);
+        background-color: rgba(240, 248, 255, 0.7); 
         display: flex;
         align-items: center;
         justify-content: center;
@@ -314,10 +287,11 @@ padding: 80px 0 80px 0;
         margin-bottom: 10px;
         font-weight: 700;
         font-size: 18px; 
+    
       }
   
       .separator {
-        border-top: 1px solid #fff; 
+        border-top: 1px solid #fff;
         margin: 20px 0; 
       }
   
@@ -339,7 +313,7 @@ padding: 80px 0 80px 0;
       
      .icon-background {
         background-color: none; 
-        width: 40px; 
+        width: 40px;
         height: 40px; 
         display: flex;
         align-items: center;
@@ -404,3 +378,81 @@ padding: 80px 0 80px 0;
     color: black;
   }
 
+  a{
+    text-decoration: none;
+    color: black;
+}
+a .item-name{
+    font-size: 16px;
+font-weight: 700;
+}
+
+
+.menu{
+  padding: 80px 0 80px 0;
+  }
+  .menu h1, .login h1{
+      font-weight: 700;
+      padding-bottom: 30px;
+  }
+ a .menu-card{
+      padding: 10px ;
+      margin:2px 0 0 0;
+      text-decoration: none;
+  }
+ .menu-active {
+    border:1px solid #CC3333 ;
+    border-radius: 5px;
+  }
+  .menu-card img{
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+  }
+  
+ 
+  .price{
+      color:#CC3333;
+      font-size: 16px;
+      font-weight: 700;
+  }
+
+
+         /* Styles for the custom alert modal */
+         .custom-alert {
+          position: fixed;
+          top: 0;
+          right: -300px;
+          width: 300px;
+          background-color: #fff;
+          box-shadow: 0 0 15px rgba(223, 16, 16, 0.2);
+          z-index: 999;
+          overflow: hidden;
+          transition: right 0.5s; /* Slide-in animation */
+      }
+      
+      .custom-alert-slide {
+          animation: slide-in 0.5s forwards; /* Slide-in animation */
+      }
+      
+      .custom-alert-content {
+          padding: 20px;
+          text-align: center;
+      }
+      
+      .custom-alert h2 {
+          font-size: 24px;
+      }
+      
+      .custom-alert p {
+          margin: 10px 0;
+      }
+      
+      .custom-alert button {
+          padding: 10px 20px;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+      }
+      
+  
