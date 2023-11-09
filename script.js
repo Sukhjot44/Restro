@@ -12,8 +12,10 @@ $(document).ready(function() {
 });
 
 
+// Get the Bootstrap carousel element
 var carousel = document.getElementById('myCarousel');
 
+// Listen for the 'slide.bs.carousel' event
 carousel.addEventListener('slide.bs.carousel', function (event) {
   var from = event.from;
   var to = event.to;
@@ -24,9 +26,11 @@ carousel.addEventListener('slide.bs.carousel', function (event) {
   var nextSlide = document.querySelector('.carousel-item[data-slide-to="' + to + '"]');
 
   if (direction === 'left') {
+    // Slide in the active slide from the left
     activeSlide.style.transform = 'translateX(-100%)';
     nextSlide.style.transform = 'translateX(0)';
   } else if (direction === 'right') {
+    // Slide in the active slide from the right
     activeSlide.style.transform = 'translateX(100%)';
     nextSlide.style.transform = 'translateX(0)';
   }
@@ -43,7 +47,7 @@ function scrollToDiv(targetId) {
   function validateContactForm() {
     var form = document.querySelector('form');
     if (form.checkValidity()) {
-      // form.submit();
+      
     }var phoneInput = document.getElementById('phone');
     var phoneError = document.getElementById('phone-error');
     var phonePattern = /^[0-9]+$/;
@@ -55,8 +59,10 @@ function scrollToDiv(targetId) {
     }
     document.getElementById('confirmation-message').style.display = 'block';
 
+    // Return false to prevent the form from actually submitting
     return false;
   }
+
 
 
 
