@@ -456,3 +456,11 @@ font-weight: 700;
       }
       
   
+  @keyframes slide-in {
+          from {
+              right: -300px;
+          }
+          to {
+              right: 0;
+          }
+      }
